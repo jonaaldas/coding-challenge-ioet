@@ -5,7 +5,7 @@ const distPath = 'dist'
 module.exports = {
   mode: "development",
   entry: {
-      app: './src/getData.js'
+      app: './src/app.js'
   },
   module: {
     rules: [

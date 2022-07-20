@@ -22,7 +22,6 @@ function mapBuilder(a_hours, b_hours, person1, person2) {
       const str2 = seperatesDaysOfWeekToCompare(b_hours, k)
       if (str1 === str2) {
         let aTimeFrame = deletesDaysFromHours(a_hours, i); 
-        console.log(aTimeFrame)
         let bTimeFrame = deletesDaysFromHours(b_hours, k);
         let a = turnsHoursIntoArray(aTimeFrame);
         let b = turnsHoursIntoArray(bTimeFrame)
