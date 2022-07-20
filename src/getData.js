@@ -1,11 +1,13 @@
-import {map, createMap} from '../src/functions.js' 
+import {map, seperatingNames} from '../src/functions.js' 
 
+// we wait for the data to come and we save it to a variable and exceute the code
 export const gettingData = async () =>{
   let res = await getDataFromTxtFile()
-  createMap(res)
+  seperatingNames(res)
   console.log(map)
 }
-  
+
+// Gets data from .txt file and makes it an object
 const getDataFromTxtFile = async () => {
   try{
     let obj = {}
@@ -24,7 +26,8 @@ const getDataFromTxtFile = async () => {
    }
 }
 
-
+// IIFE (immediately invoked function expression)
+// Runs the code as soon as its define  
 (async () => {
   await gettingData()
 })()
