@@ -1,7 +1,8 @@
 const path = require('path')
 const basePath = __dirname 
 const distPath = 'dist'
-
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: "development",
   entry: {
@@ -23,5 +24,6 @@ module.exports = {
   output:{
     path: path.join(basePath, distPath),
     filename: "bundle.js"
-  }
+  }, 
+  plugins: [new HtmlWebpackPlugin()]
 }

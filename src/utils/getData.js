@@ -1,5 +1,4 @@
 import {map, seperatingNames} from './functions.js' 
-
 // we wait for the data to come and we save it to a variable and exceute the code
 export const gettingData = async () =>{
   let res = await getDataFromTxtFile()
